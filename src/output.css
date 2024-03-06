@@ -663,20 +663,12 @@ video {
   height: 3.5rem;
 }
 
-.h-16 {
-  height: 4rem;
-}
-
 .h-5 {
   height: 1.25rem;
 }
 
 .h-64 {
   height: 16rem;
-}
-
-.h-\[100px\] {
-  height: 100px;
 }
 
 .h-\[400px\] {
@@ -689,10 +681,6 @@ video {
 
 .w-10 {
   width: 2.5rem;
-}
-
-.w-16 {
-  width: 4rem;
 }
 
 .w-5 {
@@ -765,10 +753,6 @@ video {
 
 .rounded {
   border-radius: 0.25rem;
-}
-
-.rounded-full {
-  border-radius: 9999px;
 }
 
 .rounded-lg {
@@ -852,34 +836,13 @@ video {
   padding-bottom: 0.25rem;
 }
 
-.py-14 {
-  padding-top: 3.5rem;
-  padding-bottom: 3.5rem;
-}
-
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
 
-.pb-0 {
-  padding-bottom: 0px;
-}
-
-.pb-5 {
-  padding-bottom: 1.25rem;
-}
-
 .pb-\[50px\] {
   padding-bottom: 50px;
-}
-
-.pl-10 {
-  padding-left: 2.5rem;
-}
-
-.pl-3 {
-  padding-left: 0.75rem;
 }
 
 .pr-3 {
@@ -941,10 +904,6 @@ video {
 
 .text-\[18px\] {
   font-size: 18px;
-}
-
-.text-\[30px\] {
-  font-size: 30px;
 }
 
 .text-sm {
@@ -1145,10 +1104,34 @@ video {
 
 .bannerimage {
   background-image: url("../Asset/banenrag.png");
-  height: 800px;
+  height: 700px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+@media only screen and (min-width: 1200px) {
+  .bannertext {
+    font-size: 60px;
+    margin-bottom: 24px;
+    line-height: 64px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .bannertext {
+    font-size: 30px;
+    margin-bottom: 24px;
+    line-height: 32px;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+  .bannertext {
+    font-size: 50px;
+    margin-bottom: 24px;
+    line-height: 60px;
+  }
 }
 
 .hover\:bg-blue-700:hover {
@@ -1192,11 +1175,6 @@ video {
 
   .sm\:pl-\[10px\] {
     padding-left: 10px;
-  }
-
-  .sm\:text-xs {
-    font-size: 0.75rem;
-    line-height: 1rem;
   }
 }
 
@@ -1259,15 +1237,6 @@ video {
     padding: 0px;
   }
 
-  .md\:text-\[25px\] {
-    font-size: 25px;
-  }
-
-  .md\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-
   .md\:text-blue-700 {
     --tw-text-opacity: 1;
     color: rgb(29 78 216 / var(--tw-text-opacity));
@@ -1308,16 +1277,8 @@ video {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .lg\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
   .lg\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-
-  .lg\:p-0 {
-    padding: 0px;
   }
 
   .lg\:pb-9 {
@@ -1335,11 +1296,6 @@ video {
   .lg\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
-  }
-
-  .lg\:text-6xl {
-    font-size: 3.75rem;
-    line-height: 1;
   }
 }
 

@@ -24,8 +24,31 @@
 }
 .bannerimage {
   background-image: url("../Asset/banenrag.png");
-  height: 800px;
+  height: 700px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+@media only screen and (min-width: 1200px) {
+  .bannertext {
+    font-size: 60px;
+    margin-bottom: 24px;
+    line-height: 64px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .bannertext {
+    font-size: 30px;
+    margin-bottom: 24px;
+    line-height: 32px;
+  }
+}
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+  .bannertext {
+    font-size: 50px;
+    margin-bottom: 24px;
+    line-height: 60px;
+  }
 }
